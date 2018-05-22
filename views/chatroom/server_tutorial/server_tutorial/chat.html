@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat Room</title>
+		<link rel="stylesheet" type="text/css" href="hub.css">
+	</head>
+		<script src="/socket.io/socket.io.js"></script>
+	<body>
+		<div id="chatroomMain">
+			<div id="chatRoomList">
+				<div id="chatRoom1" class="crNum">ChatRoom No.1</div>
+			</div>
+			<div id="chatDisplay">
+				<div id="userNameList">
+					
+				</div>
+				<div id="chatDetails">
+					
+					<div id="addChatRoomPopUpPage">
+						<div id="chatroom_to_be_added">ChatRoom Name: 
+							<input type="text" placeholder="Type in Chat Room Name and press create" id="createChatRoomName"></input>						
+						</div>
+						<div id="personContactInfo">
+							<div id="newChatRoomName"></div>
+						
+						</div>
+						<button id="createButton">Create</button>
+					
+					</div>
+								
+				</div>
+							
+			</div>
+			<div id="sendMessageDiv">
+					<button id="sendBtn">Send Message</button>
+					<input type="text" placeholder="   Type in message to send" id="sendInp" />
+			</div>
+			<div id="addChatRoom">
+				<button id="addCrButton">New Chatroom</button>
+			</div>
+		</div>
+		
+
+		<script src="hub.js"></script>
+	</body>
+	
+</html>
