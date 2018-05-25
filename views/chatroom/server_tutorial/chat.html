@@ -2,35 +2,40 @@
 <html>
 	<head>
 		<title>Chat Room</title>
-		<link rel="stylesheet" type="text/css" href="hub.css">
+		<link rel="stylesheet" type="text/css" href="chat.css">
 	</head>
 		<script src="/socket.io/socket.io.js"></script>
 	<body>
 		<div id="chatroomMain">
 			<div id="chatRoomList">
-				<div id="chatRoom1" class="crNum">ChatRoom No.1</div>
+				<div id="chatRoom1" class="crNum">ChatRoom No.1</div>   
 			</div>
-			<div id="chatDisplay">
-				<div id="userNameList">
-					
+			
+			<div class="chatDisplay" id="chatDisplays">
+			<!-- the line above: change id to class  and give id to chatDisplays -->
+				<div class="userNameList" id="userNameLists">
+				<!-- the line above: change id to class and class  and give id to userNameLists  -->
 				</div>
-				<div id="chatDetails">
+				<div class="chatDetails" id="chatDetail">
+				<!-- the line above: change id to class and class  and give id to chatDetail -->
+				
 					
-					<div id="addChatRoomPopUpPage">
-						<div id="chatroom_to_be_added">ChatRoom Name: 
-							<input type="text" placeholder="Type in Chat Room Name and press create" id="createChatRoomName"></input>						
-						</div>
-						<div id="personContactInfo">
-							<div id="newChatRoomName"></div>
-						
-						</div>
-						<button id="createButton">Create</button>
-					
-					</div>
 								
 				</div>
-							
+			
 			</div>
+			<div id="addChatRoomPopUpPage">
+				<div id="chatroom_to_be_added">ChatRoom Name: 
+					<input type="text" placeholder="Type in Chat Room Name and press create" id="createChatRoomName"></input>						
+				</div>
+				<div id="personContactInfo">
+					<div id="newChatRoomName"></div>
+						
+				</div>
+				<button id="createButton">Create</button>
+					
+			</div>	
+			
 			<div id="sendMessageDiv">
 					<button id="sendBtn">Send Message</button>
 					<input type="text" placeholder="   Type in message to send" id="sendInp" />
@@ -41,7 +46,7 @@
 		</div>
 		
 
-		<script src="hub.js"></script>
+		<script src="chat.js"></script>
 	</body>
 	
 </html>
